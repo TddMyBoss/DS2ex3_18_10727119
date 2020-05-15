@@ -1,4 +1,4 @@
-// 10727119_§d®¦½ç  ¥¼§¹¦¨»İ¨Ï¥ÎGithub
+// 10727119_å³æ©è³œ  æœªå®Œæˆéœ€ä½¿ç”¨Github
 
 # include<iostream>
 # include<cstring>
@@ -19,10 +19,10 @@ using namespace std ;
 
 typedef struct Data {
 	
-	char sid[Max_Len] ; // ¾Ç¸¹ 
-	char sname[Max_Len] ; // ©m¦W 
-	unsigned char score[Columns] ; // ¤À¼Æ 
-	float mean ; // ¥­§¡ 
+	char sid[Max_Len] ; // å­¸è™Ÿ 
+	char sname[Max_Len] ; // å§“å 
+	unsigned char score[Columns] ; // åˆ†æ•¸ 
+	float mean ; // å¹³å‡ 
 	
 } Data ;
     
@@ -37,7 +37,7 @@ int TextBinary( string & File_Name ) {
 	do {
 		
 	    cout << endl << "Input a file number:" ;
-	    cin >> File_Name ;  // Åª¤J¤@¼Æ¦r
+	    cin >> File_Name ;  // è®€å…¥ä¸€æ•¸å­—
 		    
 	    if ( File_Name.compare("0") )
 	        return false ;
@@ -144,7 +144,7 @@ public:
 		
 	}
 	
-	int FindPrime( int range ) { // §ä³Ì¤p½è¼Æ 
+	int FindPrime( int range ) { // æ‰¾æœ€å°è³ªæ•¸ 
 
 		bool isPrime = false ;
 		int i = 0 ; 
@@ -231,7 +231,7 @@ public:
 		
 	}
 	
-	void Impact ( int index, int location ) { // ¸I¼² 
+	void Impact ( int index, int location ) { // ç¢°æ’ 
 		
 		int temp = 1 ;
 		
@@ -451,9 +451,9 @@ int main() {
 	while ( command != 0 ) {
 		
 		cout << endl << "****  Heap Construction  ****" ;
-		cout << endl << "*  0. Â÷¶}                  *" ;
-		cout << endl << "*  1.                       *" ;
-		cout << endl << "*  2.                       *" ;
+		cout << endl << "*  0. é›¢é–‹                  *" ;
+		cout << endl << "*  1. QuadraticHash         *" ;
+		cout << endl << "*  2. DoubleHash            *" ;
 		cout << endl << "*****************************" ;
 		cout << endl << "Input a command(0, 1, 2): "    ;
 		cin >> command ;
